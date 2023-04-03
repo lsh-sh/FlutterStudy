@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './pages/first_app.dart';
 import './pages/container.dart';
+import './pages/text.dart';
 void main() {
   runApp(MaterialApp(
     title: "Flutter Study",
@@ -11,12 +12,14 @@ void main() {
 class MyApp extends StatelessWidget {
   List<String> listData = [
     '第一个Flutter应用',
-    'Container组件'
+    'Container组件',
+    'Text组件'
   ];
 
   List<Widget> listPage = const [
     FirstApp(),
     ContainerApp(),
+    TextApp(),
   ];
 
   MyApp({super.key});
