@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         transform: Matrix4.rotationZ(0.2),
         // 沿着z轴旋转
         // color: Colors.yellow, // 如果只需要Container背景颜色，配置这个也可以
-        alignment: Alignment.center,
+        alignment: Alignment.center, //控制子元素显示的位置
         // 配置Container内元素的方位
         decoration: BoxDecoration(
             // color: Colors.yellow, // 配置背景颜色

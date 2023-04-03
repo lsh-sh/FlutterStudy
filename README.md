@@ -4,6 +4,8 @@
 
 视频课程中有一部分dart学习，这一部分我没有做笔记。
 
+本项目使用的dart版本为：2.19.5，flutter版本为： 3.7.8
+
 ## Flutter介绍
 
 Flutter是谷歌公司开发的一款开源、免费的UI框架，可以快速的在Android和iOS上构建高质量App。
@@ -113,3 +115,30 @@ __TextStyle的参数:__
 更多参数：https://docs.flutter.io/flutter/painting/TextStyle-class.html
 
 代码参考[text.dart](./lib/pages/text.dart)
+
+## 图片组件
+Flutter中可以通过Image组件来加载并显示图片,Image的数据源可以是asset、文件、内存以及网络。
+
+__Image组件的常用属性:__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| alignment               | 图片的对齐方式 |
+| color和colorBlendMode    | 设置图片的背景颜色，通常和colorBlendMode配合一起使用，这样可以是图片颜色和背景色混合 |
+| fit                   | fit属性用来控制图片的拉伸和挤压，这都是根据父容器来的。<br />BoxFit.fill:全图显示，图片会被拉伸，并充满父容器。<br />BoxFit.contain:全图显示，显示原比例，可能会有空隙。<br />BoxFit.cover：显示可能拉伸，可能裁切，充满（图片要充满整个容器，还不变形）。 <br />BoxFit.fitWidth：宽度充满（横向充满），显示可能拉伸，可能裁切。 <br />BoxFit.fitHeight ：高度充满（竖向充满）,显示可能拉伸，可能裁切。<br />BoxFit.scaleDown：效果和contain差不多，但是此属性不允许显示超过源图片大小，可小不可大。 |
+| repeat           | ImageRepeat.repeat : 横向和纵向都进行重复，直到铺满整<br />ImageRepeat.repeatX: 横向重复，纵向不重复。<br />ImageRepeat.repeatY：纵向重复，横向不重复。 |
+| width    | 宽度 一般结合ClipOval才能看到效果 |
+| height | 高度 一般结合ClipOval才能看到效果 |
+
+更多属性参考：https://api.flflutter.dev/flflutter/widgets/Image-class.html
+
+### Image.network加载网络图片
+加载网络图片，圆形图片的实现方式参考代码[image.dart](./lib/pages/image.dart)
+
+### Image.assert加载本地图片
+1、项目根目录新建images文件夹,images中新建2.x 3.x对应的文件
+![images](./static/2.png)
+2、然后，打开pubspec.yaml 声明一下添加的图片文件， 注意: 空格
+![pubspec](./static/3.png)
+
+具体代码参考[image.dart](./lib/pages/image.dart)
