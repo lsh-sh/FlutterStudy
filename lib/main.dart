@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import './pages/first_app.dart';
+import './pages/container.dart';
 void main() {
   runApp(MaterialApp(
+    title: "Flutter Study",
     home: MyApp(),
   ));
 }
@@ -9,6 +11,12 @@ void main() {
 class MyApp extends StatelessWidget {
   List<String> listData = [
     '第一个Flutter应用',
+    'Container组件'
+  ];
+
+  List<Widget> listPage = const [
+    FirstApp(),
+    ContainerApp(),
   ];
 
   MyApp({super.key});
@@ -27,12 +35,12 @@ class MyApp extends StatelessWidget {
       ),
       onTap: (){
         Navigator.of(context).push(
-          MaterialPageRoute(builder: (context) => const FirstApp())
+          MaterialPageRoute(builder: (context) => listPage[index])
         );
       },
     );
-  }
 
+  }
 
   @override
   Widget build(BuildContext context) {

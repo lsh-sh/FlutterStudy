@@ -9,7 +9,7 @@ class FirstApp extends StatelessWidget {
     return MaterialApp(
       home:Scaffold(
         appBar: AppBar(
-          title: const Text('第一个Flutter应用 自定义组件'),
+          title: const Text('自定义组件'),
         ),
         body: const Center(
           child: Text(
