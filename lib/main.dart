@@ -3,6 +3,7 @@ import './pages/first_app.dart';
 import './pages/container.dart';
 import './pages/text.dart';
 import './pages/image.dart';
+import './pages/icon.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -16,14 +17,16 @@ class MyApp extends StatelessWidget {
     '第一个Flutter应用',
     'Container组件',
     'Text组件',
-    '图片组件'
+    '图片组件',
+    'Icon组件'
   ];
 
   List<Widget> listPage = const [
     FirstApp(),
     ContainerApp(),
     TextApp(),
-    ImageApp()
+    ImageApp(),
+    IconApp()
   ];
 
   MyApp({super.key});

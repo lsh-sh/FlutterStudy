@@ -136,9 +136,24 @@ __Image组件的常用属性:__
 加载网络图片，圆形图片的实现方式参考代码[image.dart](./lib/pages/image.dart)
 
 ### Image.assert加载本地图片
-1、项目根目录新建images文件夹,images中新建2.x 3.x对应的文件
+1. 项目根目录新建images文件夹,images中新建2.x 3.x对应的文件
 ![images](./static/2.png)
-2、然后，打开pubspec.yaml 声明一下添加的图片文件， 注意: 空格
+2. 然后，打开pubspec.yaml声明一下添加的图片文件
 ![pubspec](./static/3.png)
 
 具体代码参考[image.dart](./lib/pages/image.dart)
+
+## Icon图标
+### 下载字体图标
+字体图标下载地址：https://www.iconfont.cn/
+
+把需要下载的字体图标加入到购物车中，然后点击下载代码进行下载
+![下载](./static/4.png)
+
+### 导入字体图标
+1. 项目根目录新建fonts文件夹,将下载的压缩包解压，将ttf文件和json文件放入fonts文件夹下
+![5.png](./static/5.png)
+2. 打开pubspec.yaml配置字体路径
+![6.png](./static/6.png)
+3. 编写字体图标类加载代码，参考[fonts.dart](./lib/fonts.dart)
+4. 使用字体类代码，参考[icon.dart](./lib/pages/icon.dart)
