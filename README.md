@@ -18,7 +18,7 @@ Flutter Packages官网：https://pub.dev/
 
 ## Flutter目录结构介绍
 
-<img src="./static/1.png" alt="1.png" style="zoom:50%;" />
+![1.png](https://github.com/lsh-sh/FlutterStudy/blob/main/static/1.png)
 
 我在创建项目时并没有选择windows、macos、linux和web平台，所以没有生成这些平台的目录结构，static是我自己创建的用于存放截图的。
 
