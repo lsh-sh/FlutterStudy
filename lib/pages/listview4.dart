@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
               width: 150,
               child: Column(
                 children: [
-                  SizedBox(
+                  SizedBox( // 配置一个容器包裹住image，让image进行填充
                     height: 80,
                     width: 150,
                     child: Image.network(

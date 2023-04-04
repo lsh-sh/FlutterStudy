@@ -1,6 +1,6 @@
 # FlutterStudy
 
-本笔记是学习B站上的[视频课程](https://www.bilibili.com/video/BV1S4411E7LY?p=2&vd_source=7f3fdd89d8f49319865d708ed0bc9d3c)
+本笔记是学习B站上大地老师的[视频课程](https://www.bilibili.com/video/BV1S4411E7LY?p=2&vd_source=7f3fdd89d8f49319865d708ed0bc9d3c)
 
 视频课程中有一部分dart学习，这一部分我没有做笔记。
 
@@ -18,7 +18,7 @@ Flutter Packages官网：https://pub.dev/
 
 ## Flutter目录结构介绍
 
-![目录结构](./static/1.png)
+<img src="./static/1.png" alt="目录结构" style="zoom:50%;" />
 
 我在创建项目时并没有选择windows、macos、linux和web平台，所以没有生成这些平台的目录结构，static是我自己创建的用于存放截图的。
 
@@ -141,9 +141,9 @@ __Image组件的常用属性:__
 ### Image.assert加载本地图片
 
 1. 项目根目录新建images文件夹,images中新建2.x 3.x对应的文件
-   ![images](./static/2.png)
+   <img src="./static/2.png" alt="images" style="zoom:50%;" />
 2. 然后，打开pubspec.yaml声明一下添加的图片文件
-   ![pubspec](./static/3.png)
+   <img src="./static/3.png" alt="pubspec" style="zoom:50%;" />
 
 具体代码参考[image.dart](./lib/pages/image.dart)
 
@@ -154,18 +154,22 @@ __Image组件的常用属性:__
 字体图标下载地址：https://www.iconfont.cn/
 
 把需要下载的字体图标加入到购物车中，然后点击下载代码进行下载
-![下载](./static/4.png)
+<img src="./static/4.png" alt="下载" style="zoom:50%;" />
 
 ### 导入字体图标
 
 1. 项目根目录新建fonts文件夹,将下载的压缩包解压，将ttf文件和json文件放入fonts文件夹下
-   ![5.png](./static/5.png)
+   <img src="./static/5.png" alt="5.png" style="zoom:50%;" />
 2. 打开pubspec.yaml配置字体路径
-   ![6.png](./static/6.png)
+   <img src="./static/6.png" alt="6.png" style="zoom:50%;" />
 3. 编写字体图标类加载代码，参考[fonts.dart](./lib/fonts.dart)
 4. 使用字体类代码，参考[icon.dart](./lib/pages/icon.dart)
 
 ## ListView列表组件
+
+列表布局是我们项目开发中最常用的一种布局方式。
+
+Flutter中我们可以通过ListView来定义列表项，支持垂直和水平方向展示。
 
 __列表组件常用参数：__
 
@@ -179,7 +183,28 @@ __列表组件常用参数：__
 __具体使用:__
 
 1. 垂直列表，参考代码[listview1.dart](./lib/pages/listview1.dart)
-2. 图标列表，参考代码[listview1.dart](./lib/pages/listview2.dart)
-3. 图文列表，参考代码[listview1.dart](./lib/pages/listview3.dart)
-4. 水平列表，参考代码[listview1.dart](./lib/pages/listview4.dart)
-5. 动态列表，参考代码[listview1.dart](./lib/pages/listview5.dart)
+2. 图标列表，参考代码[listview2.dart](./lib/pages/listview2.dart)
+3. 图文列表，参考代码[listview3.dart](./lib/pages/listview3.dart)
+4. 水平列表，参考代码[listview4.dart](./lib/pages/listview4.dart)
+5. 动态列表，参考代码[listview5.dart](./lib/pages/listview5.dart)
+
+## GirdView网格组件
+
+__GridView常用属性：__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| scrollDirection               | 滚动方法 |
+| padding    | 内边距 |
+| resolve                   | 组件反向排序 |
+| children           |列表元素 |
+| crossAxisSpacing           |水平子Widget之间间距 |
+| mainAxisSpacing           |垂直子Widget之间间距 |
+| crossAxisCount           |一行的Widget数量，用在GridView.count |
+| maxCrossAxisExtent           |横轴子元素的最大长度， 用在GridView.extent |
+| childAspectRatio           |子Widget宽高比例 |
+| gridDelegate           |控制布局主要用在GridView.builder里面，值有SliverGridDelegateWithFixedCrossAxisCount和SliverGridDelegateWithMaxCrossAxisExtent |
+
+1. GridView.count实现网格布局，代码参考[gridview1.dart](./lib/pages/gridview1.dart)
+2. GridView.extent实现网格布局，代码参考[gridview2.dart](./lib/pages/gridview2.dart)
+3. GridView实现动态列表，代码参考[gridview3.dart](./lib/pages/gridview3.dart)

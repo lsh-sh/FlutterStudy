@@ -9,6 +9,9 @@ import './pages/listview2.dart';
 import './pages/listview3.dart';
 import './pages/listview4.dart';
 import './pages/listview5.dart';
+import './pages/gridview1.dart';
+import './pages/gridview2.dart';
+import './pages/gridview3.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -29,6 +32,9 @@ class MyApp extends StatelessWidget {
     'ListView图文列表',
     'ListView水平列表',
     'ListView动态列表',
+    'GridView.count实现网格布局',
+    'GridView.extent实现网格布局',
+    'GridView.extent实现动态列表',
   ];
 
   final List<Widget> _pages = const [
@@ -42,6 +48,9 @@ class MyApp extends StatelessWidget {
     ListView3Page(),
     ListView4Page(),
     ListView5Page(),
+    GridView1Page(),
+    GridView2Page(),
+    GridView3Page(),
   ];
 
   MyApp({super.key});

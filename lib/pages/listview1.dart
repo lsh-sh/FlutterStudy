@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return ListView( // listview的使用
       children: const [
         ListTile(title: Text('我是一个标题')), // 一个listview条目
         Divider(), // 分割线

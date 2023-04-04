@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
               Icons.home,
             ),
             title: Text('首页')),
-        Divider(),
+        Divider(), // 分割线
         ListTile(
             leading: Icon(
               Icons.assignment,

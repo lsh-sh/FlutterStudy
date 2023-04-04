@@ -42,6 +42,7 @@ class MyApp extends StatelessWidget {
 class MyApp2 extends StatelessWidget {
   const MyApp2({Key? key}) : super(key: key);
 
+  // 初始化listview展示的条目
   List<Widget> _initListData() {
     var tempList = listData.map((el) => Column(
           children: [

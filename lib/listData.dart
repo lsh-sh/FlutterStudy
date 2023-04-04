@@ -5,7 +5,7 @@ List listData=[
           "imageUrl": 'https://www.itying.com/images/flutter/1.png',
       },
        {
-          "title": 'Childhood in a picture',
+          "title": 'Childhood',
           "author": 'Google',
           "imageUrl": 'https://www.itying.com/images/flutter/2.png',
       },
