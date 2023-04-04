@@ -12,6 +12,8 @@ import './pages/listview5.dart';
 import './pages/gridview1.dart';
 import './pages/gridview2.dart';
 import './pages/gridview3.dart';
+import './pages/row.dart';
+import './pages/column.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -35,6 +37,8 @@ class MyApp extends StatelessWidget {
     'GridView.count实现网格布局',
     'GridView.extent实现网格布局',
     'GridView.extent实现动态列表',
+    '线性布局-Row',
+    '线性布局-Column',
   ];
 
   final List<Widget> _pages = const [
@@ -51,6 +55,8 @@ class MyApp extends StatelessWidget {
     GridView1Page(),
     GridView2Page(),
     GridView3Page(),
+    RowPage(),
+    ColumnPage(),
   ];
 
   MyApp({super.key});

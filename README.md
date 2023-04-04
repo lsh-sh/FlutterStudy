@@ -18,7 +18,7 @@ Flutter Packages官网：https://pub.dev/
 
 ## Flutter目录结构介绍
 
-<img src="./static/1.png" alt="目录结构" style="zoom:50%;" />
+![1.png](./static/1.png)
 
 我在创建项目时并没有选择windows、macos、linux和web平台，所以没有生成这些平台的目录结构，static是我自己创建的用于存放截图的。
 
@@ -141,9 +141,9 @@ __Image组件的常用属性:__
 ### Image.assert加载本地图片
 
 1. 项目根目录新建images文件夹,images中新建2.x 3.x对应的文件
-   <img src="./static/2.png" alt="images" style="zoom:50%;" />
+![2.png](./static/2.png)
 2. 然后，打开pubspec.yaml声明一下添加的图片文件
-   <img src="./static/3.png" alt="pubspec" style="zoom:50%;" />
+![3.png](./static/3.png)
 
 具体代码参考[image.dart](./lib/pages/image.dart)
 
@@ -154,14 +154,14 @@ __Image组件的常用属性:__
 字体图标下载地址：https://www.iconfont.cn/
 
 把需要下载的字体图标加入到购物车中，然后点击下载代码进行下载
-<img src="./static/4.png" alt="下载" style="zoom:50%;" />
+![4.png](./static/4.png)
 
 ### 导入字体图标
 
 1. 项目根目录新建fonts文件夹,将下载的压缩包解压，将ttf文件和json文件放入fonts文件夹下
-   <img src="./static/5.png" alt="5.png" style="zoom:50%;" />
+   ![5.png](./static/5.png)
 2. 打开pubspec.yaml配置字体路径
-   <img src="./static/6.png" alt="6.png" style="zoom:50%;" />
+   ![6.png](./static/6.png)
 3. 编写字体图标类加载代码，参考[fonts.dart](./lib/fonts.dart)
 4. 使用字体类代码，参考[icon.dart](./lib/pages/icon.dart)
 
@@ -208,3 +208,16 @@ __GridView常用属性：__
 1. GridView.count实现网格布局，代码参考[gridview1.dart](./lib/pages/gridview1.dart)
 2. GridView.extent实现网格布局，代码参考[gridview2.dart](./lib/pages/gridview2.dart)
 3. GridView实现动态列表，代码参考[gridview3.dart](./lib/pages/gridview3.dart)
+
+## 线性布局Row和Column
+
+__属性：__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| mainAxisAlignment               | 主轴的排序方式 |
+| crossAxisAlignment    | 次轴的排序方式 |
+| children                   | 组件子元素 |
+
+1. Row布局参考代码[row.dart](./lib/pages/row.dart)
+2. Column布局参考代码[column.dart](./lib/pages/column.dart)
