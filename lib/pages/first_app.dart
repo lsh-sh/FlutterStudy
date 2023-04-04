@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 // 定义一个类继承StatelessWidget
-class FirstApp extends StatelessWidget {
-  const FirstApp({Key? key}) : super(key: key);
+class FirstPage extends StatelessWidget {
+  const FirstPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

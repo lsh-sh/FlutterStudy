@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ContainerApp extends StatelessWidget {
-  const ContainerApp({Key? key}) : super(key: key);
+class ContainerPage extends StatelessWidget {
+  const ContainerPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

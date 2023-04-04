@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../fonts.dart';
-class IconApp extends StatelessWidget {
-  const IconApp({Key? key}) : super(key: key);
+class IconPage extends StatelessWidget {
+  const IconPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -19,6 +19,7 @@ Flutter Packages官网：https://pub.dev/
 ## Flutter目录结构介绍
 
 ![目录结构](./static/1.png)
+
 我在创建项目时并没有选择windows、macos、linux和web平台，所以没有生成这些平台的目录结构，static是我自己创建的用于存放截图的。
 
 | 文件夹                | 作用                                                         |
@@ -77,9 +78,9 @@ StatefulWidget 是有状态组件，持有的状态可能在widget生命周期�
 | 名称              | 功能                                                        |
 | --------------------- | ------------------------------------------------------------ |
 | alignment               | topCenter：顶部居中对齐<br />topLeft：顶部左对齐<br />topRight：顶部右对齐<br />center：水平垂直居中对齐<br />centerLeft：垂直居中水平居左对齐<br />centerRight：垂直居中水平居右对齐<br />bottomCenter底部居中对齐<br />bottomLeft：底部居左对齐<br />bottomRight：底部居右对齐 |
-| decoration                   | decoration: BoxDecoration( color: Colors.blue,<br /> border: Border.all( color:Colors.red, width: 2.0),<br />borderRadius:BorderRadius.circular((8)),// 圆角<br />boxShadow: [ BoxShadow( color: Colors.blue, offffset: Offffset(2.0, 2.0),blurRadius: 10.0, ) ],<br />gradient: LinearGradient( colors: [Colors.red, Colors.orange], ),///LinearGradient 背景线性渐变 RadialGradient径向渐变 |
+| decoration          | decoration: BoxDecoration( color: Colors.blue,<br />border: Border.all( color:Colors.red, width: 2.0),<br />borderRadius:BorderRadius.circular((8)),// 圆角<br />boxShadow: [ BoxShadow( color: Colors.blue, offffset: Offffset(2.0, 2.0),blurRadius: 10.0, ) ],<br />gradient: LinearGradient( colors: [Colors.red, Colors.orange], ),///LinearGradient 背景线性渐变 RadialGradient径向渐变 |
 | margin                   | margin属性是表示Container与外部其他组件的距离。 EdgeInsets.all(20.0), |
-| padding                  | padding就是Container的内边距，指Container边缘与Child之间的距离,padding:EdgeInsets.all(10.0)                                          |
+| padding                  | padding就是Container的内边距，指Container边缘与Child之间的距离<br />padding:EdgeInsets.all(10.0)                                          |
 | transform          | 让Container容易进行一些旋转之类的transform: Matrix4.rotationZ(0.2)                          |
 | height | 容器高度    |
 | width | 容器宽度    |
@@ -117,6 +118,7 @@ __TextStyle的参数:__
 代码参考[text.dart](./lib/pages/text.dart)
 
 ## 图片组件
+
 Flutter中可以通过Image组件来加载并显示图片,Image的数据源可以是asset、文件、内存以及网络。
 
 __Image组件的常用属性:__
@@ -133,27 +135,51 @@ __Image组件的常用属性:__
 更多属性参考：https://api.flflutter.dev/flflutter/widgets/Image-class.html
 
 ### Image.network加载网络图片
+
 加载网络图片，圆形图片的实现方式参考代码[image.dart](./lib/pages/image.dart)
 
 ### Image.assert加载本地图片
+
 1. 项目根目录新建images文件夹,images中新建2.x 3.x对应的文件
-![images](./static/2.png)
+   ![images](./static/2.png)
 2. 然后，打开pubspec.yaml声明一下添加的图片文件
-![pubspec](./static/3.png)
+   ![pubspec](./static/3.png)
 
 具体代码参考[image.dart](./lib/pages/image.dart)
 
 ## Icon图标
+
 ### 下载字体图标
+
 字体图标下载地址：https://www.iconfont.cn/
 
 把需要下载的字体图标加入到购物车中，然后点击下载代码进行下载
 ![下载](./static/4.png)
 
 ### 导入字体图标
+
 1. 项目根目录新建fonts文件夹,将下载的压缩包解压，将ttf文件和json文件放入fonts文件夹下
-![5.png](./static/5.png)
+   ![5.png](./static/5.png)
 2. 打开pubspec.yaml配置字体路径
-![6.png](./static/6.png)
+   ![6.png](./static/6.png)
 3. 编写字体图标类加载代码，参考[fonts.dart](./lib/fonts.dart)
 4. 使用字体类代码，参考[icon.dart](./lib/pages/icon.dart)
+
+## ListView列表组件
+
+__列表组件常用参数：__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| scrollDirection               | Axis.horizontal水平列表Axis.vertical垂直列表 |
+| padding    | 内边距 |
+| resolve                   | 组件反向排序 |
+| children           |列表元素 |
+
+__具体使用:__
+
+1. 垂直列表，参考代码[listview1.dart](./lib/pages/listview1.dart)
+2. 图标列表，参考代码[listview1.dart](./lib/pages/listview2.dart)
+3. 图文列表，参考代码[listview1.dart](./lib/pages/listview3.dart)
+4. 水平列表，参考代码[listview1.dart](./lib/pages/listview4.dart)
+5. 动态列表，参考代码[listview1.dart](./lib/pages/listview5.dart)
