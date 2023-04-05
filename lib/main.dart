@@ -24,6 +24,9 @@ import './pages/aspect_ratio.dart';
 import './pages/card1.dart';
 import './pages/card2.dart';
 import './pages/button.dart';
+import './pages/wrap.dart';
+import './pages/stateful.dart';
+import './pages/bottom_navigation_bar.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -59,6 +62,9 @@ class MyApp extends StatelessWidget {
     'Card实现通讯录列表',
     'Card实现图文列表',
     'Button组件',
+    'Wrap组件',
+    'StatefulWidgetPage实现计数器',
+    'BottomNavigationBar使用'
   ];
 
   final List<Widget> _pages = const [
@@ -86,7 +92,10 @@ class MyApp extends StatelessWidget {
     AspectRatioPage(),
     Card1Page(),
     Card2Page(),
-    ButtonPage()
+    ButtonPage(),
+    WrapPage(),
+    StatefulWidgetPage(),
+    BottomNavigationBarPage()
   ];
 
   MyApp({super.key});

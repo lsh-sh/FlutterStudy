@@ -358,3 +358,40 @@ __ButtonStyle里面的常用的参数:__
 | side            | 设置边框 |
 
 代码[button.dart](./lib/pages/button.dart)
+
+## Wrap组件
+
+Wrap可以实现流布局，单行的Wrap跟Row表现几乎一致，单列的Wrap则跟Column表现几乎一致。
+
+但 Row与Column都是单行单列的，Wrap则突破了这个限制，mainAxis上空间不足时，则向crossAxis上去扩展显示。
+
+__常用参数:__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| direction               | 主轴的方向，默认水平  |
+| alignment                | 主轴的对其方式 |
+| spacing            | 主轴方向上的间距 |
+| textDirection            | 文本方向 |
+| verticalDirection            | 定义了children摆放顺序，默认是down，见Flex相关属性介绍 |
+| runAlignment            | run的对齐方式。run可以理解为新的行或者列，如果是水平方向布局的话，run可以理解为新的一行 |
+| runSpacing            | run的间距 |
+
+代码[wrap.dart](./lib/pages/wrap.dart)
+
+## BottomNavigationBar组件
+
+BottomNavigationBar 是底部导航条，可以让我们定义底部Tab切换，bottomNavigationBar是Scaffold组件的参数。
+
+__常用参数:__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| items               | List底部导航条按钮集合  |
+| iconSize                | 底部导航条icon的大小 |
+| currentIndex            | 当前选中的索引 |
+| fixedColor            | 选中的颜色 |
+| type            |  底部导航条数量超过3个时候，设置type为BottomNavigationBarType.fixed|
+
+代码[bottom_navigation_bar.dart](./lib/pages/bottom_navigation_bar.dart)
+
