@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../listData.dart';
 
 class RowPage extends StatelessWidget {
   const RowPage({Key? key}) : super(key: key);

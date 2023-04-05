@@ -18,7 +18,7 @@ Flutter Packages官网：https://pub.dev/
 
 ## Flutter目录结构介绍
 
-![1.png](https://github.com/lsh-sh/FlutterStudy/blob/main/static/1.png)
+![1.png](./static/1.png)
 
 我在创建项目时并没有选择windows、macos、linux和web平台，所以没有生成这些平台的目录结构，static是我自己创建的用于存放截图的。
 
@@ -53,15 +53,13 @@ __常用属性：__
 
 Scaffold是Material Design布局结构的基本实现。
 
-此类提供了用于显示drawer、snackbar和底部sheet的API。
-
 __常用属性：__
 
 - appBar（显示在界面顶部的一个 AppBar）
 - body（当前界面所显示的主要内容 Widget）
 - drawer（抽屉菜单控件）
 
-基本使用可参考代码[main.dart](./lib/main.dart)
+基本使用代码[main.dart](./lib/main.dart)
 
 ## 自定义组件使用
 
@@ -71,7 +69,7 @@ StatelessWidget 是无状态组件，状态不可变的widget
 
 StatefulWidget 是有状态组件，持有的状态可能在widget生命周期改变
 
-可参考代码[first_app.dart](./lib/pages/first_app.dart)
+代码[first_app.dart](./lib/pages/first_app.dart)
 
 ## Container组件
 
@@ -86,7 +84,7 @@ StatefulWidget 是有状态组件，持有的状态可能在widget生命周期�
 | width | 容器宽度    |
 | child | 容器子元素    |
 
-代码参考[container.dart](./lib/pages/container.dart)
+代码[container.dart](./lib/pages/container.dart)
 
 ## Text组件
 
@@ -115,7 +113,7 @@ __TextStyle的参数:__
 
 更多参数：https://docs.flutter.io/flutter/painting/TextStyle-class.html
 
-代码参考[text.dart](./lib/pages/text.dart)
+代码[text.dart](./lib/pages/text.dart)
 
 ## 图片组件
 
@@ -136,7 +134,7 @@ __Image组件的常用属性:__
 
 ### Image.network加载网络图片
 
-加载网络图片，圆形图片的实现方式参考代码[image.dart](./lib/pages/image.dart)
+加载网络图片，圆形图片的实现方式代码[image.dart](./lib/pages/image.dart)
 
 ### Image.assert加载本地图片
 
@@ -148,7 +146,7 @@ __Image组件的常用属性:__
 
 ![3.png](./static/3.png)
 
-具体代码参考[image.dart](./lib/pages/image.dart)
+具体代码[image.dart](./lib/pages/image.dart)
 
 ## Icon图标
 
@@ -170,8 +168,8 @@ __Image组件的常用属性:__
 
    ![6.png](./static/6.png)
 
-3. 编写字体图标类加载代码，参考[fonts.dart](./lib/fonts.dart)
-4. 使用字体类代码，参考[icon.dart](./lib/pages/icon.dart)
+3. 编写字体图标类加载代码[fonts.dart](./lib/fonts.dart)
+4. 使用字体类代码[icon.dart](./lib/pages/icon.dart)
 
 ## ListView列表组件
 
@@ -190,11 +188,11 @@ __列表组件常用参数：__
 
 __具体使用:__
 
-1. 垂直列表，参考代码[listview1.dart](./lib/pages/listview1.dart)
-2. 图标列表，参考代码[listview2.dart](./lib/pages/listview2.dart)
-3. 图文列表，参考代码[listview3.dart](./lib/pages/listview3.dart)
-4. 水平列表，参考代码[listview4.dart](./lib/pages/listview4.dart)
-5. 动态列表，参考代码[listview5.dart](./lib/pages/listview5.dart)
+1. 垂直列表代码[listview1.dart](./lib/pages/listview1.dart)
+2. 图标列表代码[listview2.dart](./lib/pages/listview2.dart)
+3. 图文列表代码[listview3.dart](./lib/pages/listview3.dart)
+4. 水平列表代码[listview4.dart](./lib/pages/listview4.dart)
+5. 动态列表代码[listview5.dart](./lib/pages/listview5.dart)
 
 ## GirdView网格组件
 
@@ -213,9 +211,24 @@ __GridView常用属性：__
 | childAspectRatio           |子Widget宽高比例 |
 | gridDelegate           |控制布局主要用在GridView.builder里面，值有SliverGridDelegateWithFixedCrossAxisCount和SliverGridDelegateWithMaxCrossAxisExtent |
 
-1. GridView.count实现网格布局，代码参考[gridview1.dart](./lib/pages/gridview1.dart)
-2. GridView.extent实现网格布局，代码参考[gridview2.dart](./lib/pages/gridview2.dart)
-3. GridView实现动态列表，代码参考[gridview3.dart](./lib/pages/gridview3.dart)
+1. GridView.count实现网格布局代码[gridview1.dart](./lib/pages/gridview1.dart)
+2. GridView.extent实现网格布局代码[gridview2.dart](./lib/pages/gridview2.dart)
+3. GridView实现动态列表代码[gridview3.dart](./lib/pages/gridview3.dart)
+
+## Padding组件
+
+Flutter中很多Widget是没有padding属性。
+
+这个时候就可以用Padding组件处理容器与子元素之间的间距。
+
+__属性：__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| padding               | padding值, EdgeInsetss设置填充的值 |
+| child    | 子组件 |
+
+代码[padding.dart](./lib/pages/padding.dart)
 
 ## 线性布局Row和Column
 
@@ -227,5 +240,16 @@ __属性：__
 | crossAxisAlignment    | 次轴的排序方式 |
 | children                   | 组件子元素 |
 
-1. Row布局参考代码[row.dart](./lib/pages/row.dart)
-2. Column布局参考代码[column.dart](./lib/pages/column.dart)
+1. Row布局代码[row.dart](./lib/pages/row.dart)
+2. Column布局代码[column.dart](./lib/pages/column.dart)
+
+## 弹性布局
+
+Flex组件可以通过属性direction设置子组件的排列方向是横向还是纵向。
+
+使用Row或Column也可以实现Flex的效果，因为Row和Column都继承自 Flex ，参数基本相同。
+
+Flex和Expanded组件配合实现弹性布局 。
+
+1. Flex和Expanded配合使用代码[flex_expanded.dart](./lib/pages/flex_expanded.dart)
+2. Column和Row结合Expanded案例代码[expanded_case.dart](./lib/pages/expanded_case.dart)

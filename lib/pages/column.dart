@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../listData.dart';
 
 class ColumnPage extends StatelessWidget {
   const ColumnPage({Key? key}) : super(key: key);
