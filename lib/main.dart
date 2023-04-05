@@ -23,6 +23,7 @@ import './pages/stack_align.dart';
 import './pages/aspect_ratio.dart';
 import './pages/card1.dart';
 import './pages/card2.dart';
+import './pages/button.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -57,6 +58,7 @@ class MyApp extends StatelessWidget {
     'AspectRatio组件',
     'Card实现通讯录列表',
     'Card实现图文列表',
+    'Button组件',
   ];
 
   final List<Widget> _pages = const [
@@ -84,6 +86,7 @@ class MyApp extends StatelessWidget {
     AspectRatioPage(),
     Card1Page(),
     Card2Page(),
+    ButtonPage()
   ];
 
   MyApp({super.key});
