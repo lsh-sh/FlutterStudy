@@ -395,3 +395,19 @@ __常用参数:__
 
 代码[bottom_navigation_bar.dart](./lib/pages/bottom_navigation_bar.dart)
 
+## FloatingActionButton组件
+
+FloatingActionButton可以实现浮动按钮
+
+__常用参数:__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| child               | 子视图，一般为Icon，不推荐使用文字  |
+| tooltip                | 被长按时显示，也是无障碍功能 |
+| elevation            | 未点击的时候的阴影 |
+| hignlightElevation    | 点击时阴影值，默认12.0 |
+| shape            |  可以定义FloatingActionButton的形状等|
+
+代码[floating_action_button.dart](./lib/pages/floating_action_button.dart)
+

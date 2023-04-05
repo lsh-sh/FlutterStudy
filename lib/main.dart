@@ -27,6 +27,7 @@ import './pages/button.dart';
 import './pages/wrap.dart';
 import './pages/stateful.dart';
 import './pages/bottom_navigation_bar.dart';
+import './pages/floating_action_button.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -64,7 +65,8 @@ class MyApp extends StatelessWidget {
     'Button组件',
     'Wrap组件',
     'StatefulWidgetPage实现计数器',
-    'BottomNavigationBar使用'
+    'BottomNavigationBar使用',
+    'FloatingActionButton使用'
   ];
 
   final List<Widget> _pages = const [
@@ -95,7 +97,8 @@ class MyApp extends StatelessWidget {
     ButtonPage(),
     WrapPage(),
     StatefulWidgetPage(),
-    BottomNavigationBarPage()
+    BottomNavigationBarPage(),
+    FloatingActionButtonPage()
   ];
 
   MyApp({super.key});
