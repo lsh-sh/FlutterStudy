@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../fonts.dart';
+
 class IconPage extends StatelessWidget {
   const IconPage({Key? key}) : super(key: key);
 
@@ -31,19 +32,41 @@ class MyApp extends StatelessWidget {
             size: 60,
             color: Colors.red,
           ),
-          SizedBox(height: 20,),
+          SizedBox(
+            height: 20,
+          ),
           Icon(
             Icons.shop,
             size: 40,
             color: Colors.blue,
           ),
+          Text('以上是系统图标'),
           // 使用自定义图标
-          SizedBox(height: 20,),
-          Icon(IconFonts.book,size: 60,color: Colors.red,),
-          SizedBox(height: 20,),
-          Icon(IconFonts.weixin,size: 60,color: Colors.blue,),
-          SizedBox(height: 20,),
-          Icon(IconFonts.cart,size: 60,color: Colors.pink,)
+          SizedBox(
+            height: 20,
+          ),
+          Icon(
+            IconFonts.book,
+            size: 60,
+            color: Colors.red,
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Icon(
+            IconFonts.weixin,
+            size: 60,
+            color: Colors.blue,
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Icon(
+            IconFonts.cart,
+            size: 60,
+            color: Colors.pink,
+          ),
+          Text('以上是自定义图标')
         ],
       ),
     );
