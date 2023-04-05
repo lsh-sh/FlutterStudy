@@ -269,7 +269,7 @@ __常用属性：__
 
 ### Positioned
 
-Positioned组件可以控制每个子元素的显示位置
+Stack结合Positioned组件可以控制每个子元素的显示位置
 
 __常用属性：__
 
@@ -293,6 +293,42 @@ __常用属性：__
 | children                   | 组件子元素 |
 
 __代码示例：__
+
 1. Stack使用代码[stack.dart](./lib/pages/stack.dart)
 2. Stack和Positioned配合使用代码[stack_positioned.dart](./lib/pages/stack_positioned.dart)
-3. Stack和Align配置使用代码
+3. Stack和Align配置使用代码[stack_align.dart](./lib/pages/stack_align.dart)
+
+## AspectRatio的组件
+
+AspectRatio的作用是根据设置调整子元素child的宽高比。
+
+AspectRatio首先会在布局限制条件允许的范围内尽可能的扩展，widget的高度是由宽度和比率决定的，类似于BoxFit中的contain，按照固定比率去尽量占满区域。
+
+如果在满足所有限制条件过后无法找到一个可行的尺寸，AspectRatio最终将会去优先适应布局限制条件，而忽略所设置的比率。
+
+__常用属性：__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| aspectRatio               | 宽高比，最终可能不会根据这个值去布局，具体则要看综合因素，外层是否允许按照这种比率进行布局，这只是一个参考值  |
+| children                  | 组件子元素 |
+
+代码[aspect_ratio.dart](./lib/pages/aspect_ratio.dart)
+
+## Card组件
+
+__常用属性：__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| margin               | 外边距  |
+| child                | 子组件 |
+| elevation            | 阴影值的深度 |
+| color            | 背景颜色 |
+| shadowColor            | 阴影颜色 |
+| clipBehavior            | clipBehavior内容溢出的剪切方式<br/>Clip.none：不剪切<br/>Clip.hardEdge：裁剪但不应用抗锯齿<br/>Clip.antiAlias：裁剪而且抗锯齿<br/>Clip.antiAliasWithSaveLayer：带有抗锯齿的剪辑，并在剪辑之后立即保存saveLayer |
+|shape            | Card的阴影效果，默认的阴影效果为圆角的长方形边|
+
+1. Card实现通讯录卡片列表代码[card1.dart](./lib/pages/card1.dart)
+2. Card实现图文列表代码[card2.dart](./lib/pages/card2.dart)
+

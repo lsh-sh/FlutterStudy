@@ -8,7 +8,7 @@ class StackAlignPage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Align组件'),
+          title: const Text('Stack和Align配合使用'),
         ),
         body: const MyApp(),
       ),
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       child: Stack(
         children: const [
           Align(
-            alignment: Alignment.topLeft,
+            alignment: Alignment.topLeft, // 位于左上角
             child: Icon(
               Icons.home,
               size: 30,
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           Align(
-            alignment: Alignment.center,
+            alignment: Alignment.center, // 位于中间
             child: Icon(
               Icons.search,
               size: 30,
@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           Align(
-            alignment: Alignment.bottomRight,
+            alignment: Alignment.bottomRight, // 位于右下角
             child: Icon(
               Icons.settings,
               size: 30,

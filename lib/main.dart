@@ -20,6 +20,9 @@ import './pages/expanded_case.dart';
 import './pages/stack.dart';
 import './pages/stack_positioned.dart';
 import './pages/stack_align.dart';
+import './pages/aspect_ratio.dart';
+import './pages/card1.dart';
+import './pages/card2.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -51,6 +54,9 @@ class MyApp extends StatelessWidget {
     '层叠布局-Stack',
     'Stack和Positioned配合使用',
     'Stack和Align配合使用',
+    'AspectRatio组件',
+    'Card实现通讯录列表',
+    'Card实现图文列表',
   ];
 
   final List<Widget> _pages = const [
@@ -75,6 +81,9 @@ class MyApp extends StatelessWidget {
     StackPage(),
     StackPositionedPage(),
     StackAlignPage(),
+    AspectRatioPage(),
+    Card1Page(),
+    Card2Page(),
   ];
 
   MyApp({super.key});
