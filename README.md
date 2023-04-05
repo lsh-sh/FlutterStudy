@@ -2,7 +2,10 @@
 
 本笔记是学习B站上大地老师的[视频课程](https://www.bilibili.com/video/BV1S4411E7LY?p=2&vd_source=7f3fdd89d8f49319865d708ed0bc9d3c)
 
-只做了Flutter组件使用的笔记
+只做了Flutter组件使用的笔记，目前还在看视频和更新笔记中
+
+App运行是下图中的效果，可点击每个条目进入具体界面中
+![7.png](./static/7.png)
 
 本项目使用的dart版本为：2.19.5，flutter版本为： 3.7.8
 
