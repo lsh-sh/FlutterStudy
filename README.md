@@ -411,3 +411,16 @@ __常用参数:__
 
 代码[floating_action_button.dart](./lib/pages/floating_action_button.dart)
 
+## 抽屉菜单Drawer
+
+在Scaffold组件里面传入drawer参数可以定义左侧边栏，传入endDrawer可以定义右侧边栏。
+
+__UserAccountsDrawerHeader属性：__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| decoration    | 设置顶部背景颜色  |
+| currentAccountPicture    | 用户头像  |
+| otherAccountsPictures    | 用来设置当前账户其他账户头像 |
+
+代码[drawer.dart](./lib/pages/drawer.dart)

@@ -8,7 +8,7 @@ class WrapPage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Wrap组件'),
+          title: const Text('Wrap组件'),
         ),
         body: const MyApp(),
       ),
