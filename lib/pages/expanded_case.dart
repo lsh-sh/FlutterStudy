@@ -23,10 +23,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Container(
+        SizedBox(
           height: 200,
           width: double.infinity, // 和父容器一样的宽度，这里也就是屏幕宽度
-          color: Colors.black,
+          child: Image.network(
+              "https://www.itying.com/images/flutter/1.png",
+              fit: BoxFit.cover),
         ),
         const SizedBox(height: 10),
         SizedBox(

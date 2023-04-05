@@ -253,3 +253,46 @@ Flex和Expanded组件配合实现弹性布局 。
 
 1. Flex和Expanded配合使用代码[flex_expanded.dart](./lib/pages/flex_expanded.dart)
 2. Column和Row结合Expanded案例代码[expanded_case.dart](./lib/pages/expanded_case.dart)
+
+## 层叠布局（Stack、Align、Positioned）
+
+### Stack
+
+Stack可以实现组件之间堆叠显示
+
+__常用属性：__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| alignment               | 设置子元素的显示位置 |
+| children                   | 组件子元素 |
+
+### Positioned
+
+Positioned组件可以控制每个子元素的显示位置
+
+__常用属性：__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| top               | 子元素距离顶部的距离 |
+| bottom               | 子元素距离底部的距离 |
+| left               | 子元素距离左侧距离 |
+| right                   | 子元素距离右侧距离 |
+| child                   | 子组件 |
+
+### Align
+
+Align设置子元素相对于父容器的位置
+
+__常用属性：__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| alignment               | 设置子元素的显示位置  |
+| children                   | 组件子元素 |
+
+__代码示例：__
+1. Stack使用代码[stack.dart](./lib/pages/stack.dart)
+2. Stack和Positioned配合使用代码[stack_positioned.dart](./lib/pages/stack_positioned.dart)
+3. Stack和Align配置使用代码

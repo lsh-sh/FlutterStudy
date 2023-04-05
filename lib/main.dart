@@ -17,6 +17,9 @@ import './pages/row.dart';
 import './pages/column.dart';
 import './pages/flex_expanded.dart';
 import './pages/expanded_case.dart';
+import './pages/stack.dart';
+import './pages/stack_positioned.dart';
+import './pages/stack_align.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -45,6 +48,9 @@ class MyApp extends StatelessWidget {
     '线性布局-Column',
     '弹性布局-Flex Expanded',
     'Column和Row结合Expanded案例',
+    '层叠布局-Stack',
+    'Stack和Positioned配合使用',
+    'Stack和Align配合使用',
   ];
 
   final List<Widget> _pages = const [
@@ -65,7 +71,10 @@ class MyApp extends StatelessWidget {
     RowPage(),
     ColumnPage(),
     FlexExpandedPage(),
-    ExpandedCasePage()
+    ExpandedCasePage(),
+    StackPage(),
+    StackPositionedPage(),
+    StackAlignPage(),
   ];
 
   MyApp({super.key});
