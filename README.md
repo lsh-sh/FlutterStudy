@@ -424,3 +424,63 @@ __UserAccountsDrawerHeader属性：__
 | otherAccountsPictures    | 用来设置当前账户其他账户头像 |
 
 代码[drawer.dart](./lib/pages/drawer.dart)
+
+
+## AppBar、TabBar和TabBarView使用
+
+__AppBar常用属性：__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| leading               | 在标题前面显示的一个控件，在首页通常显示应用的 logo；在其他界面通常显示为返回按钮  |
+| actions                | 通常使用 IconButton 来表示，可以放按钮组 |
+| bottom            | 通常放tabBar，标题下面显示一个 Tab 导航栏 |
+| iconTheme    | 图标样式 |
+| centerTitle            |  标题是否居中显示|
+
+__TabBar常用属性：__
+
+| 名称              | 功能                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| tabs               | 显示的标签内容，一般使用Tab对象,也可以是其他的Widget  |
+| isScrollable                | 是否可滚动 |
+| indicator            | 指示器decoration，例如边框等 |
+| indicatorSize    | 指示器大小计算方式，TabBarIndicatorSize.label跟文字等宽,TabBarIndicatorSize.tab跟每个tab等宽 |
+
+代码[appbar_tabbar.dart](./lib/pages/appbar_tabbar.dart)
+
+## Flutter路由
+
+Flutter中给我们提供了两种配置路由跳转的方式：1、基本路由 2、命名路由
+
+### 基本路由
+通过下面代码进行跳转
+```dart
+// HomePage为想跳转的页面
+Navigator.of(context)
+.push( MaterialPageRoute(builder: (context){ return const HomePage(); }) );
+```
+### 命名路由
+代码[main.dart](./lib/main.dart)
+
+### 返回上一级路由
+```dart
+Navigator.of(context).pop();
+```
+
+### 替换路由
+```dart
+Navigator.of(context).pushReplacementNamed('/registerSecond');
+```
+
+### 返回到根路由
+```dart
+Navigator.of(context).pushAndRemoveUntil( MaterialPageRoute(builder: (BuildContext context) { return const Tabs(); }), (route) => false);
+```
+
+## Dialog组件
+代码[dialog.dart](./lib/pages/dialog.dart)
+
+
+## PageView组件
+代码[page_view.dart](./lib/pages/page_view.dart)

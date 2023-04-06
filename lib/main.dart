@@ -29,6 +29,9 @@ import './pages/stateful.dart';
 import './pages/bottom_navigation_bar.dart';
 import './pages/floating_action_button.dart';
 import './pages/drawer.dart';
+import './pages/appbar_tabbar.dart';
+import './pages/dialog.dart';
+import './pages/page_view.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -69,6 +72,9 @@ class MyApp extends StatelessWidget {
     'BottomNavigationBar使用',
     'FloatingActionButton使用',
     '抽屉菜单Drawer',
+    'AppBar和TabBar使用',
+    'Dialog使用',
+    'PageView使用'
   ];
 
   Map<String, WidgetBuilder> routerMap = {
@@ -102,6 +108,9 @@ class MyApp extends StatelessWidget {
     '/page_nav': (context) => const BottomNavigationBarPage(),
     '/page_action': (context) => const FloatingActionButtonPage(),
     '/page_drawer': (context) => const DrawerPage(),
+    '/page_bar': (context) => const BarPage(),
+    '/page_dialog': (context) => const DialogPage(),
+    '/page_pageview': (context) => const PageViewPage(),
   };
   late List<String> routerName = routerMap.keys.toList();
 
