@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
+import './base_page.dart';
 
-class ListView3Page extends StatelessWidget {
-  const ListView3Page({Key? key}) : super(key: key);
+class ListView3Page extends BasePage {
+  const ListView3Page({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('ListView图文列表'),
-      ),
-      body: const MyApp(),
-    );
+  Widget? bodyBuild(BuildContext context) {
+    return const MyApp();
   }
 }
 
@@ -24,8 +20,10 @@ class MyApp extends StatelessWidget {
       children: [
         // 图片在前边显示
         ListTile(
-          leading: Image.network("https://www.itying.com/images/flutter/1.png"), // 加载网络图片
-          title: const Text('华北黄淮高温雨今起强势登场'), // 添加一级标题
+          leading: Image.network("https://www.itying.com/images/flutter/1.png"),
+          // 加载网络图片
+          title: const Text('华北黄淮高温雨今起强势登场'),
+          // 添加一级标题
           subtitle: const Text("中国天气网讯 21日开始，华北黄淮高温雨今起强势登场"), // 添加二级标题
         ),
         const Divider(),

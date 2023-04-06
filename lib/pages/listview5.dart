@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
 import '../listData.dart';
+import './base_page.dart';
 
-class ListView5Page extends StatelessWidget {
-  const ListView5Page({Key? key}) : super(key: key);
+class ListView5Page extends BasePage {
+  const ListView5Page({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('ListView动态列表'),
-      ),
-      body: const MyApp(),
-    );
+  Widget? bodyBuild(BuildContext context) {
+    return const MyApp();
   }
 }
 

@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
+import './base_page.dart';
 
-class GridView1Page extends StatelessWidget {
-  const GridView1Page({Key? key}) : super(key: key);
+class GridView1Page extends BasePage {
+  const GridView1Page({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('GridView.count实现网格布局'),
-      ),
-      body: const MyApp(),
-    );
+  Widget? bodyBuild(BuildContext context) {
+    return const MyApp();
   }
 }
 

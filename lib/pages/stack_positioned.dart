@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
+import './base_page.dart';
 
-class StackPositionedPage extends StatelessWidget {
-  const StackPositionedPage({Key? key}) : super(key: key);
+class StackPositionedPage extends BasePage {
+  const StackPositionedPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Stack和Positioned配合使用'),
-      ),
-      body: const MyApp(),
-    );
+  Widget? bodyBuild(BuildContext context) {
+    return const MyApp();
   }
 }
 
@@ -23,7 +19,8 @@ class MyApp extends StatelessWidget {
       width: 300,
       height: 400,
       color: Colors.red,
-      child: Stack( // Positioned在Stack里是相对于外部Container容器进行定位,如果没有容器是相对于屏幕来进行定位的
+      child: Stack(
+        // Positioned在Stack里是相对于外部Container容器进行定位,如果没有容器是相对于屏幕来进行定位的
         children: [
           // 使用Positioned对元素进行定位
           Positioned(

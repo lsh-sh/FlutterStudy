@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
+import './base_page.dart';
 
-class StackAlignPage extends StatelessWidget {
-  const StackAlignPage({Key? key}) : super(key: key);
+class StackAlignPage extends BasePage {
+  const StackAlignPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Stack和Align配合使用'),
-      ),
-      body: const MyApp(),
-    );
+  Widget? bodyBuild(BuildContext context) {
+    return const MyApp();
   }
 }
 

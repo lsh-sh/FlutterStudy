@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
+import './base_page.dart';
 
-class Card1Page extends StatelessWidget {
-  const Card1Page({Key? key}) : super(key: key);
+class Card1Page extends BasePage {
+  const Card1Page({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return  Scaffold(
-      appBar: AppBar(
-        title: const Text('Card实现通讯录列表'),
-      ),
-      body: const MyApp(),
-    );
+  Widget? bodyBuild(BuildContext context) {
+    return const MyApp();
   }
 }
 

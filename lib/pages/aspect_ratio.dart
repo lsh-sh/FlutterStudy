@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
+import './base_page.dart';
 
-class AspectRatioPage extends StatelessWidget {
-  const AspectRatioPage({Key? key}) : super(key: key);
+class AspectRatioPage extends BasePage {
+  const AspectRatioPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('AspectRatio组件'),
-      ),
-      body: const MyApp(),
-    );
+  Widget? bodyBuild(BuildContext context) {
+    return const MyApp();
   }
 }
 

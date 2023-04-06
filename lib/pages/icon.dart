@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
 import '../fonts.dart';
+import './base_page.dart';
 
-class IconPage extends StatelessWidget {
-  const IconPage({Key? key}) : super(key: key);
+class IconPage extends BasePage {
+  const IconPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Container组件'),
-      ),
-      body: const MyApp(),
-    );
+  Widget? bodyBuild(BuildContext context) {
+    return const MyApp();
   }
 }
 

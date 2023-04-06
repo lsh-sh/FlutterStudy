@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
+import './base_page.dart';
 
-class PaddingPage extends StatelessWidget {
-  const PaddingPage({Key? key}) : super(key: key);
+class PaddingPage extends BasePage {
+  const PaddingPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return  Scaffold(
-      appBar: AppBar(
-        title: const Text('Padding组件'),
-      ),
-      body: const MyApp(),
-    );
+  Widget? bodyBuild(BuildContext context) {
+    return const MyApp();
   }
 }
 
@@ -25,4 +21,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

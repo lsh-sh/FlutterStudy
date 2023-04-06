@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
+import './base_page.dart';
 
-class GridView2Page extends StatelessWidget {
-  const GridView2Page({Key? key}) : super(key: key);
+class GridView2Page extends BasePage {
+  const GridView2Page({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('GridView.extent实现网格布局'),
-      ),
-      body: const MyApp(),
-    );
+  Widget? bodyBuild(BuildContext context) {
+    return const MyApp();
   }
 }
 

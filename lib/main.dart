@@ -71,38 +71,39 @@ class MyApp extends StatelessWidget {
     '抽屉菜单Drawer',
   ];
 
-  final List<Widget> _pages = const [
-    FirstPage(),
-    ContainerPage(),
-    TextPage(),
-    ImagePage(),
-    IconPage(),
-    ListView1Page(),
-    ListView2Page(),
-    ListView3Page(),
-    ListView4Page(),
-    ListView5Page(),
-    GridView1Page(),
-    GridView2Page(),
-    GridView3Page(),
-    PaddingPage(),
-    RowPage(),
-    ColumnPage(),
-    FlexExpandedPage(),
-    ExpandedCasePage(),
-    StackPage(),
-    StackPositionedPage(),
-    StackAlignPage(),
-    AspectRatioPage(),
-    Card1Page(),
-    Card2Page(),
-    ButtonPage(),
-    WrapPage(),
-    StatefulWidgetPage(),
-    BottomNavigationBarPage(),
-    FloatingActionButtonPage(),
-    DrawerPage()
-  ];
+  Map<String, WidgetBuilder> routerMap = {
+    '/page_first': (context) => const FirstPage(),
+    '/page_container': (context) => const ContainerPage(),
+    '/page_text': (context) => const TextPage(),
+    '/page_image': (context) => const ImagePage(),
+    '/page_icon': (context) => const IconPage(),
+    '/page_listview1': (context) => const ListView1Page(),
+    '/page_listview2': (context) => const ListView2Page(),
+    '/page_listview3': (context) => const ListView3Page(),
+    '/page_listview4': (context) => const ListView4Page(),
+    '/page_listview5': (context) => const ListView5Page(),
+    '/page_gridview1': (context) => const GridView1Page(),
+    '/page_gridview2': (context) => const GridView2Page(),
+    '/page_gridview3': (context) => const GridView3Page(),
+    '/page_padding': (context) => const PaddingPage(),
+    '/page_row': (context) => const RowPage(),
+    '/page_column': (context) => const ColumnPage(),
+    '/page_flex': (context) => const FlexExpandedPage(),
+    '/page_case': (context) => const ExpandedCasePage(),
+    '/page_stack1': (context) => const StackPage(),
+    '/page_stack2': (context) => const StackPositionedPage(),
+    '/page_stack3': (context) => const StackAlignPage(),
+    '/page_aspect': (context) => const AspectRatioPage(),
+    '/page_card1': (context) => const Card1Page(),
+    '/page_card2': (context) => const Card2Page(),
+    '/page_button': (context) => const ButtonPage(),
+    '/page_wrap': (context) => const WrapPage(),
+    '/page_stateful': (context) => const StatefulWidgetPage(),
+    '/page_nav': (context) => const BottomNavigationBarPage(),
+    '/page_action': (context) => const FloatingActionButtonPage(),
+    '/page_drawer': (context) => const DrawerPage(),
+  };
+  late List<String> routerName = routerMap.keys.toList();
 
   MyApp({super.key});
 
@@ -121,14 +122,16 @@ class MyApp extends StatelessWidget {
       ),
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => _pages[index]));
+            .pushNamed(routerName[index], arguments: _listTitles[index]);
       },
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+      title: "Flutter Study",
+      home: Scaffold(
         appBar: AppBar(
           title: const Text('Flutter Study'),
         ),
@@ -137,6 +140,9 @@ class MyApp extends StatelessWidget {
             itemCount: _listTitles.length,
             itemBuilder: (context, index) {
               return getItem(context, index);
-            }));
+            }),
+      ),
+      routes: routerMap,
+    );
   }
 }

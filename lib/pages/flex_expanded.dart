@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
+import './base_page.dart';
 
-class FlexExpandedPage extends StatelessWidget {
-  const FlexExpandedPage({Key? key}) : super(key: key);
+class FlexExpandedPage extends BasePage {
+  const FlexExpandedPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('弹性布局-Flex Expanded'),
-      ),
-      body: const MyApp(),
-    );
+  Widget? bodyBuild(BuildContext context) {
+    return const MyApp();
   }
 }
 

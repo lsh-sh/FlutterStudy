@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
+import './base_page.dart';
 
-class ExpandedCasePage extends StatelessWidget {
-  const ExpandedCasePage({Key? key}) : super(key: key);
+class ExpandedCasePage extends BasePage {
+  const ExpandedCasePage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Column和Row结合Expanded案例'),
-      ),
-      body: const MyApp(),
-    );
+  Widget? bodyBuild(BuildContext context) {
+    return const MyApp();
   }
 }
 
@@ -24,8 +20,7 @@ class MyApp extends StatelessWidget {
         SizedBox(
           height: 200,
           width: double.infinity, // 和父容器一样的宽度，这里也就是屏幕宽度
-          child: Image.network(
-              "https://www.itying.com/images/flutter/1.png",
+          child: Image.network("https://www.itying.com/images/flutter/1.png",
               fit: BoxFit.cover),
         ),
         const SizedBox(height: 10),

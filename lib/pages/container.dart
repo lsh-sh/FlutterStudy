@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
+import './base_page.dart';
 
-class ContainerPage extends StatelessWidget {
-  const ContainerPage({Key? key}) : super(key: key);
+class ContainerPage extends BasePage {
+  const ContainerPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Container组件'),
-      ),
-      body: Column(
-        children: const [MyApp(), MyButton()],
-      ),
+  Widget? bodyBuild(BuildContext context) {
+    return Column(
+      children: const [MyApp(), MyButton()],
     );
   }
 }
@@ -29,7 +25,8 @@ class MyApp extends StatelessWidget {
         transform: Matrix4.rotationZ(0.2),
         // 沿着z轴旋转
         // color: Colors.yellow, // 如果只需要Container背景颜色，配置这个也可以
-        alignment: Alignment.center, //控制子元素显示的位置
+        alignment: Alignment.center,
+        //控制子元素显示的位置
         // 配置Container内元素的方位
         decoration: BoxDecoration(
             // color: Colors.yellow, // 配置背景颜色

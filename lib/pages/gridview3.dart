@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
 import '../listData.dart';
+import './base_page.dart';
 
-class GridView3Page extends StatelessWidget {
-  const GridView3Page({Key? key}) : super(key: key);
+class GridView3Page extends BasePage {
+  const GridView3Page({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('GridView.count实现动态列表'),
-      ),
-      body: const MyApp(),
-    );
+  Widget? bodyBuild(BuildContext context) {
+    return const MyApp();
   }
 }
 
