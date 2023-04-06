@@ -5,13 +5,11 @@ class StackPositionedPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Stack和Positioned配合使用'),
-        ),
-        body: const MyApp(),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Stack和Positioned配合使用'),
       ),
+      body: const MyApp(),
     );
   }
 }

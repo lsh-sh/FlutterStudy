@@ -5,13 +5,11 @@ class Card1Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Card实现通讯录列表'),
-        ),
-        body: const MyApp(),
+    return  Scaffold(
+      appBar: AppBar(
+        title: const Text('Card实现通讯录列表'),
       ),
+      body: const MyApp(),
     );
   }
 }

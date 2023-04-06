@@ -5,7 +5,7 @@ class FloatingActionButtonPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: MyApp());
+    return const MyApp();
   }
 }
 
@@ -22,14 +22,8 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey.shade300,
       appBar: AppBar(title: const Text('FloatingActionButton使用')),
-      body: Container(
-        alignment: Alignment.center,
-        color: Colors.grey.shade300,
-        width: double.infinity,
-        height: double.infinity,
-        child: const Text('Flutter App'),
-      ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,
         fixedColor: Colors.yellow,

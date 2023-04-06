@@ -5,13 +5,11 @@ class ButtonPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Button组件'),
-        ),
-        body: const MyApp(),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Button组件'),
       ),
+      body: const MyApp(),
     );
   }
 }

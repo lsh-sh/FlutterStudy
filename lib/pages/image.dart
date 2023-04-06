@@ -5,26 +5,24 @@ class ImagePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('图片组件'),
-        ),
-        body: Center(
-          child: Column(
-            children: const [
-              LoadNetWorkImage(),
-              Text('加载网络图片'),
-              LoadLocalImage(),
-              Text('加载本地图片'),
-              ContainerCircleImage(),
-              Text('Container实现圆形图片'),
-              ClipOvalCircleImage(),
-              Text('ClipOval实现圆形图片'),
-              CircleAvatarImage(),
-              Text('CircleAvatar实现圆形图片'),
-            ],
-          ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('图片组件'),
+      ),
+      body: Center(
+        child: Column(
+          children: const [
+            LoadNetWorkImage(),
+            Text('加载网络图片'),
+            LoadLocalImage(),
+            Text('加载本地图片'),
+            ContainerCircleImage(),
+            Text('Container实现圆形图片'),
+            ClipOvalCircleImage(),
+            Text('ClipOval实现圆形图片'),
+            CircleAvatarImage(),
+            Text('CircleAvatar实现圆形图片'),
+          ],
         ),
       ),
     );

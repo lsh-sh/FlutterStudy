@@ -5,13 +5,11 @@ class WrapPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Wrap组件'),
-        ),
-        body: const MyApp(),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Wrap组件'),
       ),
+      body: const MyApp(),
     );
   }
 }

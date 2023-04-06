@@ -5,13 +5,11 @@ class GridView1Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('GridView.count实现网格布局'),
-        ),
-        body: const MyApp(),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('GridView.count实现网格布局'),
       ),
+      body: const MyApp(),
     );
   }
 }

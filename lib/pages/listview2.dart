@@ -5,13 +5,11 @@ class ListView2Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('ListView图标列表'),
-        ),
-        body: const MyApp(),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('ListView图标列表'),
       ),
+      body: const MyApp(),
     );
   }
 }
@@ -24,7 +22,8 @@ class MyApp extends StatelessWidget {
     return ListView(
       children: const [
         ListTile(
-            leading: Icon( // 头部图标
+            leading: Icon(
+              // 头部图标
               Icons.home,
             ),
             title: Text('首页')),

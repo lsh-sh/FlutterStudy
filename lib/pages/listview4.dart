@@ -5,13 +5,11 @@ class ListView4Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('ListView水平列表'),
-        ),
-        body: const MyApp(),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('ListView水平列表'),
       ),
+      body: const MyApp(),
     );
   }
 }
@@ -32,7 +30,8 @@ class MyApp extends StatelessWidget {
               width: 150,
               child: Column(
                 children: [
-                  SizedBox( // 配置一个容器包裹住image，让image进行填充
+                  SizedBox(
+                    // 配置一个容器包裹住image，让image进行填充
                     height: 80,
                     width: 150,
                     child: Image.network(

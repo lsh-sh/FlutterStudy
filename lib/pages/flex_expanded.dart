@@ -5,13 +5,11 @@ class FlexExpandedPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('弹性布局-Flex Expanded'),
-        ),
-        body: const MyApp(),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('弹性布局-Flex Expanded'),
       ),
+      body: const MyApp(),
     );
   }
 }

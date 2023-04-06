@@ -5,13 +5,11 @@ class ExpandedCasePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Column和Row结合Expanded案例'),
-        ),
-        body: const MyApp(),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Column和Row结合Expanded案例'),
       ),
+      body: const MyApp(),
     );
   }
 }

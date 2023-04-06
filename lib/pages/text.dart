@@ -5,13 +5,11 @@ class TextPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: const Text('Text组件'),
         ),
         body: const MyApp()
-      ),
     );
   }
 }

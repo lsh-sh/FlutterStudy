@@ -5,14 +5,12 @@ class ContainerPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Container组件'),
-        ),
-        body: Column(
-          children: const [MyApp(), MyButton()],
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Container组件'),
+      ),
+      body: Column(
+        children: const [MyApp(), MyButton()],
       ),
     );
   }

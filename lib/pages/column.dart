@@ -5,13 +5,11 @@ class ColumnPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('线性布局-Column'),
-        ),
-        body: const MyApp(),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('线性布局-Column'),
       ),
+      body: const MyApp(),
     );
   }
 }
